@@ -4,27 +4,101 @@
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    padding: 0;
+    margin: 0;
+    font-family: Tanker, sans-serif;
+    background-color: #0C0813;
+    letter-spacing: 0.05em;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+@layer components {
+    .h1 {
+        font-size: 176px;
+        font-weight: 400;
+    }
+    .h5 {
+        font-size: 64px;
+        font-weight: 400;
+    }
+    .h6 {
+        font-size: 40px;
+        font-weight: 400;
+    }
+    .p-big {
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .p-medium {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    .p-small {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
 }
+
+@font-face {
+    font-family: 'Tanker';
+    src: url('../fonts/Tanker/Tanker-Regular.woff2') format('woff2'),
+    url('../fonts/Tanker/Tanker-Regular.woff') format('woff'),
+    url('../fonts/Tanker/Tanker-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Kalam-Variable';
+    src: url('../fonts/Kalam/Kalam-Variable.woff2') format('woff2'),
+    url('../fonts/Kalam/Kalam-Variable.woff') format('woff'),
+    url('../fonts/Kalam/Kalam-Variable.ttf') format('truetype');
+    font-weight: 300 700;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Kalam-Light';
+    src: url('../fonts/Kalam/Kalam-Light.woff2') format('woff2'),
+    url('../fonts/Kalam/Kalam-Light.woff') format('woff'),
+    url('../fonts/Kalam/Kalam-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Kalam-Regular';
+    src: url('../fonts/Kalam/Kalam-Regular.woff2') format('woff2'),
+    url('../fonts/Kalam/Kalam-Regular.woff') format('woff'),
+    url('../fonts/Kalam/Kalam-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Kalam-Bold';
+    src: url('../fonts/Kalam/Kalam-Bold.woff2') format('woff2'),
+    url('../fonts/Kalam/Kalam-Bold.woff') format('woff'),
+    url('../fonts/Kalam/Kalam-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+    font-style: normal;
+}
+
