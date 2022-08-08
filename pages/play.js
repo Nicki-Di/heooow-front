@@ -55,7 +55,6 @@ export default function Play() {
         <div
             className = {styles.pattern + " h-screen overflow-hidden bg-g-500 flex flex-col justify-between items-center"}>
 
-
             <img src = {"/background/main.png"} alt = {"logo"} className = {"max-w-lg sm:max-w-2xl -mt-24 "}/>
             <div className = {"flex flex-col justify-center items-center w-full pb-10 "}>
                 {
@@ -74,10 +73,10 @@ export default function Play() {
 
 
                 <div className = {"bg-g-100 h-1 rounded w-full lg:w-1/2 mb-6 "} id = {"ground"}/>
-                <img src = {"/tip.png"} className = {"max-w-[12rem] mb-4"} alt = {""}/>
+                <img src = {"/tip.png"} className = {"hidden sm:block max-w-[12rem] mb-4"} alt = {""}/>
 
                 <button
-                    className = {styles.pattern + " bg-p-100 flex flex-row items-center rounded-2xl px-16 py-2 gap-1 text-g-100 p-big " + (playing ? "cursor-not-allowed" : " cursor-pointer")}
+                    className = {styles.pattern + " w-11/12 sm:w-auto bg-p-100 flex flex-row items-center justify-center rounded-2xl px-16 py-2 gap-1 text-g-100 p-big " + (playing ? "cursor-not-allowed" : " cursor-pointer")}
                     onClick = {playGame}
                     disabled = {playing}
                 >

@@ -19,13 +19,13 @@ export default function Result() {
 
     return (
         <div
-            className = {styles.pattern + " min-h-screen overflow-hidden bg-g-500 flex flex-col justify-between items-center"}>
+            className = {styles.pattern + " h-screen overflow-hidden bg-g-500 flex flex-col justify-between items-center"}>
 
             <img src = {"/background/main.png"} alt = {"logo"} className = {"max-w-lg sm:max-w-2xl -mt-24 "}/>
 
             <LeaderBoard/>
 
-            <div className = {"flex flex-col justify-center items-center w-full pb-10 -mt-10 sm:mt-0"}>
+            <div className = {"flex flex-col justify-center items-center w-full pb-10 -mt-10 short:mt-0"}>
                 {
                     router.query.win === "true" ?
                         <div
@@ -39,7 +39,7 @@ export default function Result() {
                                 />
                             </div>
                             <img src = {"/character/yes.png"}
-                                 className = {"max-w-[7rem] sm:max-w-[12rem] -mb-1 "}
+                                 className = {"max-w-[5rem] sm:max-w-[12rem] -mb-1 "}
                                  alt = {""}/>
                             <div className = {"flex flex-col h6"}>
                                 <div
@@ -56,7 +56,7 @@ export default function Result() {
                         <div
                             className = {"flex flex-col-reverse sm:flex-row items-center justify-center gap-2 sm:gap-8 "}>
                             <img src = {"/character/no.png"}
-                                 className = {"max-w-[7rem] sm:max-w-[12rem] -mb-1 "}
+                                 className = {"max-w-[6rem] sm:max-w-[12rem] -mb-1 "}
                                  alt = {""}/>
                             <div className = {"flex flex-col h6"}>
                                 <p className = {"text-failure text-center sm:text-left"}>Really?</p>
@@ -72,7 +72,7 @@ export default function Result() {
 
                 <div className = {"bg-g-100 h-1 rounded w-full lg:w-1/2 mb-6 "} id = {"ground"}/>
                 <button
-                    className = {" my-6 border-2 border-p-100 flex flex-row items-center rounded-2xl px-12 py-2 gap-1 text-g-100 p-big z-10 glow-on-hover"}
+                    className = {"w-11/12 sm:w-auto my-6 border-2 border-p-100 rounded-2xl px-12 py-2 gap-1 text-g-100 p-big z-10 glow-on-hover"}
                     onClick = {async () => {
                         setCopied(true)
                         await navigator.clipboard.writeText("http://localhost:3000")
@@ -84,7 +84,7 @@ export default function Result() {
 
 
                 <a href = {"/play"}
-                   className = {styles.pattern + " bg-p-100 flex flex-row items-center rounded-2xl px-12 py-2 gap-1 text-g-100 p-big z-10"}>
+                   className = {styles.pattern + " w-11/12 sm:w-auto bg-p-100 rounded-2xl px-12 py-2 gap-1 text-g-100 p-big z-10 text-center "}>
                     Try again
                 </a>
 

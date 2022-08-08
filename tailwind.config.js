@@ -24,6 +24,9 @@ module.exports = {
             'failure': '#EA1A5B'
         },
         extend: {
+            screens: {
+                'short': { 'raw': '(min-height: 820px)' },
+            },
             keyframes: {
                 MoveUpDown: {
                     '0%, 100%': {
