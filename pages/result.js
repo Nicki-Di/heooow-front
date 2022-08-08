@@ -75,7 +75,7 @@ export default function Result() {
                     className = {"w-11/12 sm:w-auto my-6 border-2 border-p-100 rounded-2xl px-12 py-2 gap-1 text-g-100 p-big z-10 glow-on-hover"}
                     onClick = {async () => {
                         setCopied(true)
-                        await navigator.clipboard.writeText("http://localhost:3000")
+                        await navigator.clipboard.writeText(window.location.origin)
                     }}
 
                 >
