@@ -4,7 +4,7 @@ import {useState} from "react";
 export default function Play() {
     const [moving, setMoving] = useState(false)
     return (
-        <div className={styles.pattern + " h-screen overflow-hidden bg-g-500 flex flex-col justify-center items-center"}>
+        <div className={styles.pattern + " relative min-h-screen short:h-screen overflow-hidden bg-g-500 flex flex-col justify-center items-center"}>
             <img src={"/background/main.png"} alt={"logo"} className={"max-w-5xl xl:max-w-full"}/>
             <div className = {"w-full absolute bottom-0 flex flex-col justify-center items-center gap-8 2xl:gap-16 "}>
 

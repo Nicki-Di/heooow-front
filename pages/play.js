@@ -53,7 +53,7 @@ export default function Play() {
 
     return (
         <div
-            className = {styles.pattern + " h-screen overflow-hidden bg-g-500 flex flex-col justify-between items-center"}>
+            className = {styles.pattern + " min-h-screen overflow-hidden bg-g-500 flex flex-col justify-between items-center"}>
 
             <img src = {"/background/main.png"} alt = {"logo"} className = {"max-w-lg sm:max-w-2xl -mt-24 "}/>
             <div className = {"flex flex-col justify-center items-center w-full pb-10 "}>
